@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chrome Shortcuts</title>
+		<style>
+			body
+			{
+				margin: 0px;
+				-webkit-user-select: none;
+			}
+
+			ul
+			{
+				list-style: none;
+				width: 265px;
+				margin: 0px;
+				padding: 0px;
+			}
+			ul li
+			{
+				padding: 4px 0px 4px 33px;
+				cursor: default;
+			}
+			ul li:hover
+			{
+				background-color: #ebebeb;
+			}
+			ul li:hover span
+			{
+				color: black;
+			}
+			ul li.separator
+			{
+				margin: 3px 0px -5px 0px;
+				border-top: 1px solid #e9e9e9;
+				background: none;
+			}
+			ul li img
+			{
+				margin: 0px 8px -4px -24px;
+			}
+			ul li span
+			{
+				display: block;
+				float: right;
+				margin-right: 20px;
+				color: #a1a192;
+			}
+		</style>
+		<script src="/js/jquery-3.1.1.min.js"></script>
+		<script src="/js/popup.js"></script>
+	</head>
+	<body>
+		<ul>
+			<li data-href="chrome://apps/"><img src="/images/apps.png" />應用程式</li>
+			<li class="separator"></li>
+			<li data-href="chrome://bookmarks/"><span>Ctrl+Shift+O</span><img src="/images/bookmarks.png" />書籤</li>
+			<li data-href="chrome://history"><span>Ctrl+H</span><img src="/images/history.png" />歷史紀錄</li>
+			<li data-href="chrome://downloads/"><span>Ctrl+J</span><img src="/images/downloads.png" />下載</li>
+			<li data-href="chrome://settings"><img src="/images/settings.png" />設定</li>
+			<li data-href="chrome://extensions/"><img src="/images/extensions.png" />擴充功能</li>
+			<li class="separator"></li>
+			<li data-href="chrome-extension://dhdgffkkebhmkfjojejmpbldmpobfkfo/options.html#url=&nav=dashboard"><img src="/images/userscript.png" />使用者腳本</li>
+			<li data-href="chrome-extension://iohcojnlgnfbmjfjfkbhahhmppcggdog/options.html#bookmarks"><img src="/images/bookmarks-sync.png" />EverSync</li>
+			<li data-href="chrome-extension://mciiogijehkdemklbdcbfkefimifhecn/ui/index.htm"><img src="/images/chrono-downloads.png" />Chrono下載管理器</li>
+			<li data-href="chrome-extension://fbmkfdfomhhlonpbnpiibloacemdhjjm/history.html"><img src="/images/recent-history.png" />Recent History</li>
+			<li class="separator"></li>
+			<li data-href="https://chrome.google.com/webstore"><img src="/images/store.png" />Chrome 線上應用程式商店</li>
+			<li data-href="http://www.chromeextensions.org/"><img src="/images/store2.png" />Chrome Extensions</li>
+			<li data-href="https://greasyfork.org/zh-TW"><img src="/images/userscript-store.png" />Greasy Fork</li>
+			<li data-href="https://openuserjs.org/"><img src="/images/userscript-store2.png" />OpenUserJS</li>
+			<li data-href="https://userstyles.org/"><img src="/images/userstyle-store.png" />UserStyle</li>
+			<li class="separator"></li>
+			<li data-href="chrome://flags/"><img src="/images/flags.png" />Chrome Flags</li>
+			<li data-href="chrome://about/">List of Chrome URLs</li>
+		</ul>
+	</body>
+</html>
