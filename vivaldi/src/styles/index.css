@@ -1,0 +1,161 @@
+body
+{
+    padding: 4px 4px 4px 4px;
+    background-color: #326189;
+}
+
+.SearchButton {
+    background-color: #0071D3; /* Green */
+    border: none;
+    width: 80px;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.SearchButton:hover {
+    background-color: #5571D3;
+}
+.InputBox {
+    margin: 2px 0 2px 0;
+    padding: 4px 8px;
+    width: 60%;
+    height: 24px;
+    font-weight: unset;
+    font-size: 14px;
+    font-family: 'Arial', '微軟正黑體', '儷黑 Pro', 'Droid Sans', '新細明體';
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+.SelectBox {
+    margin: 2px 0 2px 0;
+    padding: 4px 12px;
+    width: 180px;
+    height: 36px;
+    font-weight: unset;
+    font-size: 14px;
+    font-family: 'Arial', '微軟正黑體', '儷黑 Pro', 'Droid Sans', '新細明體';
+    display: inline-block;
+    border: 1px solid #cccccc;
+    overflow-y: hidden;
+    border-radius: 4px;
+}
+
+#SearchBar {
+    padding: 4px 4px 4px 4px;
+    position: fixed;
+    width: calc(60% + 200px);
+    height: 50px;
+    left: 20px;
+    top: calc(50% - 95px);
+}
+
+#VerticalMenu 
+{
+    margin: 0px;
+    -webkit-user-select: none;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+#VerticalMenu ul 
+{
+    list-style: none;
+    width: 265px;
+    margin: 0px;
+    padding: 0px;
+}
+#VerticalMenu ul li
+{
+    padding: 4px 0px 4px 33px;
+    cursor: default;
+}
+#VerticalMenu ul li:hover
+{
+    background-color: #ebebeb;
+}
+#VerticalMenu ul li:hover span
+{
+    color: black;
+}
+#VerticalMenu ul li.separator
+{
+    margin: 3px 0px -5px 0px;
+    border-top: 1px solid #e9e9e9;
+    background: none;
+}
+#VerticalMenu ul li img
+{
+    margin: 0px 8px -4px -24px;
+}
+#VerticalMenu ul li span
+{
+    display: block;
+    float: right;
+    margin-right: 20px;
+    color: #a1a192;
+}
+
+#HeaderBar 
+{
+	margin: 0px;
+    -webkit-user-select: none;
+    background-color: #FFFFFF;
+    position: fixed;
+	left: 0px;
+    top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	width: 100%
+}
+
+#BookmarkBarSpace 
+{
+	background-color: #E9E9E9;
+	height: 33px;
+}
+
+#HorizontalMenu 
+{
+    
+}
+#HorizontalMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+#HorizontalMenu li {
+    float: left;
+}
+
+#HorizontalMenu li a {
+    display: block;
+    color: #333333;
+	font-size: 12px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#HorizontalMenu li a img {
+	margin: 3px 0px -5px 0px;
+	padding-right: 3px;
+}
+
+#HorizontalMenu li a:hover {
+    background-color: #cccccc;
+}
+
+#HorizontalMenu .active {
+    background-color: #4CAF50;
+}
