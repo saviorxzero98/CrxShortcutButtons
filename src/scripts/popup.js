@@ -8,13 +8,15 @@ $(function()
 
     let openUrlInNewWindow = (url) => {
         chrome.windows.create({
-            url: url ?? 'chrome://newtab/'
+            url: url ?? 'chrome://newtab/',
+            state: 'maximized'
         })
     }
 
     let openIncognitoWindow = (url) => {
         chrome.windows.create({
             url: url ?? 'chrome://newtab/',
+            state: 'maximized',
             incognito: true
         })
     }
