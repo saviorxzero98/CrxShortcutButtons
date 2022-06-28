@@ -1,6 +1,7 @@
 {
+    "manifest_version": 2,
     "name": "Chrome Shortcut Button",
-    "version": "1.1.3",
+    "version": "1.2.0",
     "description": "Chrome常用功能鈕",
     "icons": {
         "128": "icon/128.png",
@@ -10,8 +11,14 @@
     "browser_action": {
         "default_title": "Chrome Shortcut Button",
         "default_icon": "icon/16.png",
-        "default_popup": "html/popup.html"
+        "default_popup": "popup.html"
     },
-    "manifest_version": 2,
-    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+    "permissions": [
+		"tabs", 
+		"storage", 
+		"notifications", 
+		"http://*/*", 
+		"https://*/*"
+	],
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com 'unsafe-eval'; object-src 'self'"
 }
